@@ -1,0 +1,17 @@
+<robot name="jaco">
+ <group name="Jaco">
+   <chain base_link="jaco7dof_link_base" tip_link="jaco7dof_link_hand"/>
+ </group>
+
+ <group name="hand">
+   <link name="jaco7dof_link_finger_1"/>
+   <link name="jaco7dof_link_finger_2"/>
+   <link name="jaco7dof_link_finger_3"/>
+ </group>
+
+ <end_effector name="Jaco" group="hand" parent_link="jaco7dof_link_hand" parent_group="Jaco"/>
+
+ <disable_collisions link1="jaco7dof_link_finger_1" link2="jaco7dof_link_finger_2"/>
+ <disable_collisions link1="jaco7dof_link_finger_1" link2="jaco7dof_link_finger_3"/>
+ <disable_collisions link1="jaco7dof_link_finger_2" link2="jaco7dof_link_finger_3"/>
+</robot>

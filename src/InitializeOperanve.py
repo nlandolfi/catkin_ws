@@ -7,7 +7,7 @@ env.SetViewer('qtcoin')
 #env.SetViewer('InteractiveMarker')
 
 module = openravepy.RaveCreateModule(env, 'urdf')
-name = module.SendCommand('load /home/viki/catkin_ws/src/ada_description/robots/mico.urdf /home/viki/catkin_ws/src/ada_description/robots/mico.srdf')
+name = module.SendCommand('load /home/ubuntu/catkin_ws/src/ada_description/robots/mico.urdf /home/ubuntu/catkin_ws/src/ada_description/robots/mico.srdf')
 mico = env.GetRobot(name)
 
 
